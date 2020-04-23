@@ -1,5 +1,7 @@
 ## To view bug fixes please select Branch "Feature_Solution1"
 
+or click [here](https://github.com/DashCoder/ReactTest-SH/tree/feature_solution1)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
