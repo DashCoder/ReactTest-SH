@@ -1,3 +1,9 @@
+/* Comments:
+
+1) Object.assign added to clone data before changes
+
+*/
+
 import AcUnit from "@material-ui/icons/AcUnit";
 import UUID from "uuid/v4";
 
@@ -14,8 +20,9 @@ const defaultMock = {
 };
 
 
+
 const createRowData = ({name, species, Icon, description}) => {
-	let rowData = defaultMock;
+	let rowData = Object.assign({}, defaultMock);
 	rowData.id = UUID();
 	rowData.name = name ? name: rowData.name;
 	rowData.species = species ? species: rowData.species;
