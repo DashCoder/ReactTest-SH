@@ -1,13 +1,15 @@
 import axios from "axios";
 
-async function getCardDetails (){
-	let newPromise = new Promise((resolve, reject)=>{
-		axios.get('http://localhost:3001/example').then((result)=>{
-			const {title, body, imgSrc} = result.data;
-			resolve(title, body, imgSrc)
-		})
-	})
-	return newPromise
-}
+    function getCardDetails() {
+	  return new Promise((resolve, reject) => {
+	    axios.get('http://localhost:3001/example').then((result) => {
+	    	resolve(result);  /* Return promise object with value */
+	    })
+	    .catch((error) => {
+	    	resolve();
+	    });
+
+	  });
+    }
 
 export { getCardDetails }
