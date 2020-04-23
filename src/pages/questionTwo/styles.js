@@ -18,7 +18,8 @@ const styles = {
 	},
 	body:{
 		overflow: 'auto',
-		textAlign: 'left'
+		textAlign: 'left',
+		marginBottom: 300,
 	},
 	spinner:{
 		justifyContent:'center',
